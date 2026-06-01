@@ -376,11 +376,19 @@ const TIPY = [
 const odpovedi = {};
 
 function spustitKviz() {
-  window.open(BREVO_URL, '_blank');
-  document.getElementById('email-brana').style.display = 'none';
-  document.getElementById('q1').classList.add('active');
-  updateProgress();
-  window.scrollTo({top:0,behavior:'smooth'});
+  // Presmerovat na Brevo formular - po vyplneni emailu Brevo presmeruje zpet s ?start=1
+  window.location.href = BREVO_URL;
+}
+
+function zkontrolovatStart() {
+  // Pokud prisli zpet z Brevo s ?start=1, spustit kviz rovnou
+  const params = new URLSearchParams(window.location.search);
+  if (params.get('start') === '1') {
+    document.getElementById('email-brana').style.display = 'none';
+    document.getElementById('q1').classList.add('active');
+    updateProgress();
+    window.scrollTo({top:0,behavior:'smooth'});
+  }
 }
 
 function vyber(el, q, body) {
@@ -498,6 +506,7 @@ function zacitZnovu() {
 }
 
 updateProgress();
+zkontrolovatStart();
 </script>
 </body>
 </html>

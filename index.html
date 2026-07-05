@@ -6,7 +6,30 @@
   <link rel="shortcut icon" type="image/svg+xml" href="/favicon.svg">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Jak dobře znáte svůj sklad? | Gabriela Tomíčková</title>
-<meta name="description" content="10 otázek které odhalí co o svém skladu nevíte. Výsledek zdarma - jen zadejte email.">
+<meta name="description" content="10 otázek které odhalí slepá místa ve vašem skladu. Víte kolik vás stojí chyba, fluktuace nebo zbytečný přepis? Za 5 minut víte kde máte mezery.">
+<meta name="keywords" content="audit skladu, řízení skladu, optimalizace skladu, vedoucí skladu, sklad náklady, KAIZEN sklad">
+<meta name="author" content="Gabriela Tomíčková">
+<meta name="robots" content="index, follow">
+<meta property="og:title" content="Jak dobře znáte svůj sklad? | Gabriela Tomíčková">
+<meta property="og:description" content="10 otázek které odhalí slepá místa ve vašem skladu. Za 5 minut víte kde máte mezery v přehledu a rozhodování.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="cs_CZ">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Jak dobře znáte svůj sklad? | Gabriela Tomíčková">
+<meta name="twitter:description" content="10 otázek které odhalí slepá místa ve vašem skladu. Za 5 minut víte kde máte mezery.">
+<link rel="canonical" href="https://kviz.gabrielatomickova.cz/">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Quiz",
+  "name": "Jak dobře znáte svůj sklad?",
+  "description": "10 otázek pro vedoucí skladu a výroby. Odhalí slepá místa v přehledu o nákladech, procesech a výkonu provozu.",
+  "url": "https://kviz.gabrielatomickova.cz",
+  "educationalLevel": "beginner",
+  "author": { "@type": "Person", "name": "Gabriela Tomíčková" },
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "CZK" }
+}
+</script>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700;800;900&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
 :root {
@@ -30,7 +53,7 @@ nav{background:var(--white);border-bottom:2px solid var(--gold);padding:13px 24p
 
 .hero{background:var(--black);padding:52px 24px 44px;position:relative;overflow:hidden;}
 .hero::before{content:"";position:absolute;top:-80px;right:-80px;width:400px;height:400px;border-radius:50%;border:70px solid rgba(233,169,27,.07);pointer-events:none;}
-.hero-inner{max-width:660px;margin:0 auto;position:relative;z-index:1;}
+.hero-inner{max-width:1040px;margin:0 auto;position:relative;z-index:1;}
 .badge{display:inline-block;background:rgba(233,169,27,.15);border:1px solid rgba(233,169,27,.3);color:var(--gold);font-size:10px;font-weight:700;letter-spacing:2px;text-transform:uppercase;padding:4px 12px;border-radius:2px;margin-bottom:18px;}
 .hero h1{font-family:"Poppins",sans-serif;font-size:clamp(22px,4vw,36px);font-weight:900;color:white;line-height:1.15;letter-spacing:-.5px;margin-bottom:14px;}
 .hero h1 em{color:var(--gold);font-style:normal;}
@@ -139,8 +162,47 @@ footer{background:#0a0a0a;padding:20px 24px;display:flex;justify-content:space-b
 .cookies-ok:hover{background:#c48e10;}
 .cookies-no{background:transparent;color:rgba(255,255,255,.4);border:1px solid rgba(255,255,255,.15);border-radius:4px;padding:8px 14px;font-family:"DM Sans",sans-serif;font-size:13px;cursor:pointer;}
 .cookies-no:hover{color:rgba(255,255,255,.7);}
+/* CONTENT BLOCK */
+.content-block{background:var(--white);border-bottom:1px solid var(--border);padding:40px;}
+.content-inner{max-width:1040px;margin:0 auto;display:flex;flex-direction:column;gap:28px;}
+.story-block{background:var(--paper);border-radius:12px;padding:28px 32px;border-left:4px solid var(--gold);}
+.story-title{font-family:"Poppins",sans-serif;font-size:13px;font-weight:700;color:var(--dark);margin-bottom:14px;text-transform:uppercase;letter-spacing:1px;}
+.story-block p{font-size:14px;color:var(--mid);line-height:1.75;margin-bottom:10px;}
+.story-block p:last-of-type{margin-bottom:0;}
+.trust-line{font-size:13px;color:var(--light);font-style:italic;border-top:1px solid var(--border);margin-top:16px;padding-top:14px;}
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:20px;}
+.content-card{background:var(--paper);border:1px solid var(--border);border-radius:12px;padding:24px;}
+.content-card-title{font-family:"Poppins",sans-serif;font-size:12px;font-weight:700;color:var(--dark);margin-bottom:14px;text-transform:uppercase;letter-spacing:1px;}
+.check-list{list-style:none;display:flex;flex-direction:column;gap:10px;}
+.check-list li{font-size:14px;color:var(--mid);display:flex;gap:10px;align-items:flex-start;line-height:1.6;}
+.check-list li::before{content:"→";color:var(--gold);font-weight:700;flex-shrink:0;margin-top:1px;}
+.steps-list{display:flex;flex-direction:column;gap:12px;}
+.step-item{display:flex;gap:12px;align-items:flex-start;}
+.step-num{width:22px;height:22px;border-radius:50%;background:var(--gold);color:#1a1000;font-size:11px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:2px;}
+.step-item>div:last-child{font-size:13px;color:var(--mid);line-height:1.65;}
+.no-need-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:12px;}
+.no-need-item{font-size:14px;color:var(--mid);display:flex;gap:8px;align-items:center;}
+.no-need-item::before{content:"✕";color:var(--light);font-size:11px;}
+.time-note{font-size:14px;color:var(--dark);font-weight:600;}
+/* POST SEKCE */
+.post-kviz{background:var(--white);border-top:1px solid var(--border);padding:40px;}
+.post-kviz-inner{max-width:1040px;margin:0 auto;display:flex;flex-direction:column;gap:28px;}
+.faq-item{border-bottom:1px solid var(--border);padding:16px 0;}
+.faq-item:first-child{padding-top:0;}
+.faq-item:last-child{border-bottom:none;}
+.faq-q{font-size:14px;font-weight:600;color:var(--dark);margin-bottom:6px;}
+.faq-a{font-size:13px;color:var(--mid);line-height:1.7;}
+.tools-tip{background:var(--gold-light);border:1px solid rgba(233,169,27,0.3);border-radius:12px;padding:24px;}
+.tools-tip strong{font-family:"Poppins",sans-serif;font-size:14px;font-weight:700;color:var(--dark);display:block;margin-bottom:12px;}
+.tools-tip-row{display:flex;align-items:flex-start;gap:10px;margin-bottom:10px;font-size:13px;color:var(--mid);line-height:1.6;}
+.tools-tip-row::before{content:"→";color:var(--gold);font-weight:700;flex-shrink:0;margin-top:1px;}
+.tools-tip-row:last-child{margin-bottom:0;}
+@media(max-width:700px){
+  .two-col{grid-template-columns:1fr;}
+  .no-need-grid{grid-template-columns:1fr;}
+  .content-block,.post-kviz{padding:24px 20px;}
+}
 </style>
-</head>
 <body>
 
 <nav>
@@ -149,14 +211,60 @@ footer{background:#0a0a0a;padding:20px 24px;display:flex;justify-content:space-b
 
 <div class="hero">
   <div class="hero-inner">
-    <div class="badge">Kvíz zdarma</div>
+    <div class="badge">Pro vedoucí skladu a výroby s týmem 3 až 50 lidí</div>
     <h1>Jak dobře znáte<br><em>svůj sklad?</em></h1>
-    <p class="hero-sub">10 otázek které odhalí co o svém provozu nevíte. Nejde o znalosti - jde o to jestli máte čísla a přehled který potřebujete k rozhodování.</p>
+    <p class="hero-sub">10 otázek které odhalí slepá místa ve vašem provozu. Nejde o znalosti, jde o to jestli máte čísla a přehled který potřebujete k rozhodování.</p>
     <div class="hero-meta">
       <span>10 otázek</span>
       <span>5 minut</span>
-      <span>Výsledek zdarma</span>
+      <span>Výsledek ihned</span>
     </div>
+  </div>
+</div>
+
+<div class="content-block">
+  <div class="content-inner">
+
+    <div class="story-block">
+      <div class="story-title">Jak to vypadá v praxi?</div>
+      <p>Vedoucí skladu, 15 lidí, firma fungovala. Na papíře v pohodě. Přišel kvíz.</p>
+      <p>Neznal náklady na metr čtvereční. Nevedl statistiku chyb. Nevěděl kolik ho stojí odchod jednoho člověka. Tři procesy závisely na jednom skladníkovi, který byl u firmy 11 let. Kdyby odešel, nikdo by nevěděl jak to dělá.</p>
+      <p>Každou z těchto věcí věděl, že nějak fungují. Ale číslo k žádné z nich neměl.</p>
+      <p>Kvíz nezjistil co nefunguje. Zjistil co neví. A to byl první krok k tomu, aby to začal řídit.</p>
+      <div class="trust-line">Otázky vycházejí z věcí, na které narážím v reálných provozech. Slepá místa která mají vedoucí skladu nejčastěji společná.</div>
+    </div>
+
+    <div class="two-col">
+      <div class="content-card">
+        <div class="content-card-title">Hodí se vám to, pokud:</div>
+        <ul class="check-list">
+          <li>Vedete sklad nebo výrobu a chcete vědět jestli máte přehled, který potřebujete</li>
+          <li>Tušíte, že někde jsou slepá místa, ale nevíte přesně kde</li>
+          <li>Chystáte se na změnu a chcete vědět co o svém provozu nevíte</li>
+          <li>Chcete argument pro vedení: kde chybí data a proč to vadí</li>
+        </ul>
+      </div>
+      <div class="content-card">
+        <div class="content-card-title">Tři kroky, žádná věda:</div>
+        <div class="steps-list">
+          <div class="step-item"><div class="step-num">1</div><div>Zadáte e-mail a spustíte kvíz. Žádná příprava, žádné podklady.</div></div>
+          <div class="step-item"><div class="step-num">2</div><div>Odpovíte na 10 otázek ze svého provozu. Tři možnosti, jedno kliknutí.</div></div>
+          <div class="step-item"><div class="step-num">3</div><div>Dostanete výsledek a konkrétní tipy co sledovat jako první.</div></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="content-card">
+      <div class="content-card-title">Co k tomu nepotřebujete:</div>
+      <div class="no-need-grid">
+        <div class="no-need-item">Konzultanta ani poradce</div>
+        <div class="no-need-item">Přípravu ani podklady</div>
+        <div class="no-need-item">Přesná čísla ze systému</div>
+        <div class="no-need-item">Zkušenosti s KAIZEN</div>
+      </div>
+      <div class="time-note">Stačí 5 minut a ochota odpovědět upřímně.</div>
+    </div>
+
   </div>
 </div>
 
@@ -173,10 +281,10 @@ footer{background:#0a0a0a;padding:20px 24px;display:flex;justify-content:space-b
   <!-- EMAIL BRANA -->
   <div class="email-brana" id="email-brana">
     <div class="email-card">
-      <h2>Zadejte email a spusťte kvíz</h2>
-      <p>Toto není test znalostí. Je to rychlý průzkum který vám ukáže směr - kde ve skladu pravděpodobně ztrácíte přehled, čas a peníze. Co sledovat a na co se zaměřit jako první.</p>
-      <button class="btn-spustit" onclick="spustitKviz()">Spustit kvíz zdarma</button>
-      <p class="email-note">Odesláním souhlasíte se zasláním praktických tipů k tématu procesů a skladu. Odhlásíte se kdykoli jedním kliknutím.</p>
+      <h2>Zadejte e-mail a spusťte kvíz</h2>
+      <p>10 otázek, 5 minut. Výsledek s konkrétními tipy ihned na stránce. Bez spamu, kdykoli se odhlásíte.</p>
+      <button class="btn-spustit" onclick="spustitKviz()">Spustit kvíz</button>
+      <p class="email-note">Odesláním souhlasíte se zasíláním praktických tipů k tématu skladu a procesů. Odhlásíte se kdykoli jedním kliknutím.</p>
     </div>
   </div>
 
@@ -342,14 +450,42 @@ footer{background:#0a0a0a;padding:20px 24px;display:flex;justify-content:space-b
 
     <div class="cta-final">
       <div class="cta-label">Další krok</div>
-      <h2>Chcete vědět přesně kde a proč vám provoz bere čas a peníze?</h2>
-      <p>Začneme bezplatným hovorem kde zjistím co řešíte. Pak se rozhodnete jestli má smysl jít dál. Bez závazku.</p>
-      <a href="https://calendly.com/tomickova-info/30min" target="_blank" class="btn-diagnostika">Domluvit bezplatný hovor</a>
+      <h2>Výsledek vás překvapil?</h2>
+      <p>Pošlete mi ho a podíváme se na něj spolu. 30 minut, zdarma, bez závazku. Řekneme si co má smysl řešit jako první.</p>
+      <a href="https://calendly.com/tomickova-info/30min" target="_blank" class="btn-diagnostika">Chci 30min hovor zdarma</a>
       <button class="btn-znovu" onclick="zacitZnovu()">Vyplnit znovu</button>
     </div>
 
   </div>
 
+</div>
+
+<div class="post-kviz">
+  <div class="post-kviz-inner">
+
+    <div class="tools-tip">
+      <strong>Chcete jít hlouběji?</strong>
+      <div class="tools-tip-row"><strong>Mini audit skladu:</strong>&nbsp;10 otázek které ukážou kde konkrétně ve skladu vznikají ztráty. <a href="https://audit.gabrielatomickova.cz" style="color:var(--gold-dark);font-weight:600;text-decoration:none;">&nbsp;Spustit audit</a></div>
+      <div class="tools-tip-row"><strong>Kalkulačka ztrát:</strong>&nbsp;zadejte 5 čísel a za 30 vteřin víte, kolik vás ztráty stojí v korunách. <a href="https://kalkulacka.gabrielatomickova.cz" style="color:var(--gold-dark);font-weight:600;text-decoration:none;">&nbsp;Spustit kalkulačku</a></div>
+    </div>
+
+    <div>
+      <div style="font-family:Poppins,sans-serif;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:var(--dark);margin-bottom:16px;">Časté otázky</div>
+      <div class="faq-item">
+        <div class="faq-q">Proč musím zadat e-mail?</div>
+        <div class="faq-a">Kvíz je zdarma, e-mail slouží jako přístup. Žádný spam, jen občasné tipy pro vedoucí skladu. Kdykoli se můžete odhlásit.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Jaký je rozdíl mezi kvízem a mini auditem skladu?</div>
+        <div class="faq-a">Kvíz odhaluje slepá místa v přehledu: co nevíte, co neměříte, kde chybí čísla. Mini audit skladu hledá kde konkrétně vznikají ztráty v procesech.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Musím projít celý kvíz najednou?</div>
+        <div class="faq-a">Ano, trvá 5 minut. Nedá se uložit a vrátit, ale ani nemusíte. 5 minut najdete vždy.</div>
+      </div>
+    </div>
+
+  </div>
 </div>
 
 <footer>
